@@ -19,58 +19,6 @@
   <body>
 
 <script>
-
-filterSelection("all") // Execute the function and show all columns
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
-
-    <script>
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -125,13 +73,13 @@ function myFunction() {
           </div>
         </form>
 
-        <div id="myBtnContainer" class="list-group">
+        <div class="list-group">
 
-          <button class="btn list-group-item list-group-item-action active" onclick="filterSelection('all')">Dashboard</button>
+          <button class="btn list-group-item list-group-item-action active">Dashboard</button>
 
           <section id="about">
 
-          <button class="btn list-group-item list-group-item-action d-flex justify-content-between align-items-center" onclick="filterSelection('java')">
+          <button class="btn list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             Java
             <span class="badge badge-primary badge-pill ml-auto">3</span>
           </button>
@@ -162,7 +110,7 @@ function myFunction() {
       </div>
 
 
-      <table class="table">
+      <table id="myTable" class="table">
   <thead class="thead-light">
     <tr>
       <th scope="col">#</th>
@@ -172,8 +120,8 @@ function myFunction() {
   </thead>
   <tbody>
 
-    <div class="column java">
-    <tr class="column java">
+    <div>
+    <tr>
       <th scope="row">1</th>
       <td>
         <a href="https://github.com/whitehathacker0205/hotel-system">
@@ -182,8 +130,7 @@ function myFunction() {
         <br><p>Hotel System Management<br>in Java With Database.
           </p>
       </td>
-    </tr>
-  </div>
+
       <td>
         <a href="images/hotel_system.png" class="btn btn-sm btn-primary my-1 my-sm-0"><img src="images/1.png"></a>
         <a href="https://github.com/whitehathacker0205/hotel-system/tree/master/hotelsystem" class="btn btn-sm btn-danger my-1 my-sm-0">
@@ -191,6 +138,7 @@ function myFunction() {
          < / > Source &nbsp;&nbsp;<img src="images/octocat.png"></a>
       </td>
     </tr>
+  </div>
 
     <tr>
       <th scope="row">2</th>
@@ -444,7 +392,6 @@ function myFunction() {
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script src="activityReader.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
