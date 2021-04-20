@@ -19,10 +19,11 @@
   <body>
 
 <script>
-filterSelection("all")
+
+filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("filterDiv");
+  x = document.getElementsByClassName("column");
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
@@ -56,16 +57,17 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current control button (highlight it)
+// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function(){
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
+
 </script>
 
     <script>
@@ -117,7 +119,7 @@ function myFunction() {
           <div class="input-group">
             <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search">
             <div class="input-group-append">
-             <!-- if used:
+             <!-- (Optional)
               <button type="submit" class="btn btn-primary">Search</button> -->
             </div>
           </div>
@@ -159,7 +161,8 @@ function myFunction() {
         </div>
       </div>
 
-      <table id="myTable" class="table">
+
+      <table class="table">
   <thead class="thead-light">
     <tr>
       <th scope="col">#</th>
@@ -169,7 +172,11 @@ function myFunction() {
   </thead>
   <tbody>
 
-    <tr class="filterDiv java">
+<div class="row">
+  <div class="column java">
+    <div class="content">
+
+    <tr>
       <th scope="row">1</th>
       <td>
         <a href="https://github.com/whitehathacker0205/hotel-system">
@@ -185,7 +192,9 @@ function myFunction() {
          < / > Source &nbsp;&nbsp;<img src="images/octocat.png"></a>
       </td>
     </tr>
-
+</div>
+</div>
+</div>
     <tr>
       <th scope="row">2</th>
       <td>
