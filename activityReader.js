@@ -19,3 +19,8 @@ function myFunction() {
     }
   }
 }
+$(window).blur(function() {
+        // Random titles
+        var myTitles = ["Made with love ❤️", "I miss you so much ❤️", "You're too shy! 🙈", "I eat veggies! 🥦"];
+        document.title = myTitles[Math.floor(Math.random() * myTitles.length)];
+    });

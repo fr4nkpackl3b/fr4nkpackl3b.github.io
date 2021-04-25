@@ -327,6 +327,18 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+#about {
+    -webkit-transition: height 1s, width 1s;
+    -moz-transition: height 1s, width 1s;
+    transition: height 1s, width 1s;
+
+
+    width: 200px;
+    height: 150px;
+}
+
+
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
