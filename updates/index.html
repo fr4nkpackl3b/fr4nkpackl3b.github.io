@@ -44,12 +44,6 @@ function myFunction() {
 }
 </script>
 
-<script>
-    document.title = '(1)'
-    // 2nd title
-    document.title = 'Updates ' + document.title
-</script>
-
   <div class="navbar-dark text-white">
     <div class="container">
       <nav class="navbar px-0 navbar-expand-lg navbar-dark">
@@ -68,7 +62,16 @@ function myFunction() {
   
 <div class="container py-5 mb5">
   <h1 class="mb-5">Updates</h1>
-  <h2 class="mb-5">What's New? I added a new <a href="#new" class="mb-5">project #13</a> called "Web design."</a></h2>
+  <h2 class="mb-5">What's New? I added a new <a onclick="changepagetitle()" href="#new" class="mb-5">project #13</a> called "Web design."</a></h2>
+
+<script type="text/javascript">
+	
+        function changepagetitle() {
+            newpagetitle = 'Updates (1)'
+            document.title = newpagetitle;
+        }
+</script>
+
   <div class="row">
     <div class="col-md-3">
         <form class="mb-3">
@@ -401,7 +404,7 @@ function myFunction() {
  <tr>
       <th id="new" scope="row">13</th>
       <td>
-        <a href="https://github.com/whitehathacker0205/math-numbers">
+        <a href="#">
         Web Design (in progress)
         </a><br><br>
         <p>
