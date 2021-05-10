@@ -9230,3 +9230,13 @@ body {
   display: inline-block;
   height: 40px;
   width: 40px; }
+  
+  .typeText::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
