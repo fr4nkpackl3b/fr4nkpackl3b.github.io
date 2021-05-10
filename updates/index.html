@@ -21,6 +21,7 @@
   <body>
 
 <script>
+
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -43,38 +44,17 @@ function myFunction() {
   }
 }
 
-	 	var typeText = document.querySelector(".typeText")
-// var textToBeTyped = "a software engineer"
-var textToBeTypedArr = ["a software engineer", "a warlord", "a king", "a peasant"]
-var index = 0, isAdding = true, textToBeTypedIndex = 0
+ 	var i = 0;
+	var txt = 'New Updates'; /* The text */
+	var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function playAnim() {
-  setTimeout(function () {
-    // set the text of typeText to a substring of the text to be typed using index.
-    typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index)
-    if (isAdding) {
-      // adding text
-      if (index > textToBeTypedArr[textToBeTypedIndex].length) {
-        //...
-      } else {
-        //...
-      }
-    } else {
-      // removing text
-      if (index === 0) {
-        //...
-        //switch to next text in text array
-        textToBeTypedIndex = (textToBeTypedIndex + 1) % textToBeTypedArr.length
-      } else {
-        //...
-      }
-    }
-    // calls itself
-    playAnim()
-  }, isAdding ? 120 : 60)
+	function typeWriter() {
+  		if (i < txt.length) {
+    	document.getElementById("demo").innerHTML += txt.charAt(i);
+    	i++;
+    	setTimeout(typeWriter, speed);
+  }
 }
-// start animation
-playAnim()
 
 
 </script>
@@ -99,8 +79,7 @@ playAnim()
   <h1 class="mb-5">Updates</h1>
   <h2 class="mb-5">What's New? I added a new <a onclick="changepagetitle()" href="#new" class="btn btn-success btn-shadow">project #13</a> called "Web Design".</a></h2>
 
-<p class="typeText">d</p>
-
+<p id="demo"></p>
 
 <script type="text/javascript">
 	
@@ -476,6 +455,7 @@ playAnim()
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="actreader.js"></script>
 
   </body>
 </html>
