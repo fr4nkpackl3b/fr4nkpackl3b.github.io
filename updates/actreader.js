@@ -18,13 +18,13 @@
  });
 
  		var i=0, text;
-	text = " It's been a while, but here is the new website I've been working on. Jam n Cream website design. 	In this website I show some small additions on it, such as an moving animations and texts. Date: 5/10/2021"
+	text = " It's been a while, but here is the new website I've been working on. Jam n Cream website design. 	In this website I show some small additions on it, such as a moving animations and texts. Date: 5/10/2021"
 
 	function typing() {
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
 			i++
-			setTimeout(typing, 90);
+			setTimeout(typing, 40);
 		}
 	}
 	typing();
