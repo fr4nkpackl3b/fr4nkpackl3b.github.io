@@ -18,7 +18,7 @@
  });
 
  		var i=0, text;
-	text = " New Updates"
+	text = " It's been a while, but here is the new website I've been working on. Jam n Cream website design. 	In this website I show some small additions on it, such as an moving animations and texts. Date: 5/10/2021"
 
 	function typing() {
 		if(i<text.length){
