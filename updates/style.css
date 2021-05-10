@@ -1,0 +1,9 @@
+.text::after {
+  content: "|";
+  /* animation: blink 1s step-end infinite; */
+  animation: none;
+}
+
+.showAnim.text::after {
+  animation: blink 1s step-end infinite;
+}

@@ -14,5 +14,17 @@
 
  // Option 3 - Smooth Scroll
  	const scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 1000
+	speed: 300
  });
+
+ 		var i=0, text;
+	text = " New Updates"
+
+	function typing() {
+		if(i<text.length){
+			document.getElementById("text").innerHTML += text.charAt(i);
+			i++
+			setTimeout(typing, 90);
+		}
+	}
+	typing();
