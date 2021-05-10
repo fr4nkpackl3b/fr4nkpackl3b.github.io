@@ -17,6 +17,4 @@
 	speed: 1000
  });
 
- 	 	const scroll = new SmoothScroll('new[href*="#"]', {
-	speed: 1000
- });
+ 	
