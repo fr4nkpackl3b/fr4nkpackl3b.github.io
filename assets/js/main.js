@@ -16,7 +16,7 @@
  	const scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000
  });
-
+ // typewriter effect
  		var i=0, text;
 	text = "I added a new project on updates called Web Design."
 	function typing() {
@@ -28,13 +28,14 @@
 	}
 	typing();
 
- // typewriter effect
+ // typewriter carousel effect
 	const carouselText = [
-  {text: "Hi! 🖐", color: "#6f6974"},
-  {text: "I ❤️ programming, ethical hacking", color: "#ff3c5c"},
-  {text: "and developing too. . .", color: "#17b06b"},
+  {text: "Hi! 🖐😊", color: "#6f6974"},
+  {text: "I ❤️ programming", color: "#ff3c5c"},
+  {text: "and ethical hacking", color: "#ff3c5c"},
+  {text: "and developing too...", color: "#17b06b"},
   {text: "I am a developer at day", color: "#714cdf"},
-  {text: "and ethical hacker by night. . .", color: "#0e6c42"}
+  {text: "and ethical hacker by night...", color: "#0e6c42"}
 ]
 
 $( document ).ready(async function() {
