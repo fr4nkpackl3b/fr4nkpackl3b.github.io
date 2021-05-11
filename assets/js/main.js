@@ -23,7 +23,7 @@
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
 			i++
-			setTimeout(typing, 30);
+			setTimeout(typing, 53);
 		}
 	}
 	typing();
