@@ -30,16 +30,16 @@
 
  // typewriter effect
 	const carouselText = [
-  {text: "Welcome! 🐱‍💻", color: "#8869e4"},
-  {text: "I am not a hacker! 👨‍💻", color: "#17b06b"},
-  {text: "I am whitehathacker0205 and Ariel Fajardo", color: "#ff3c5c"}
+  {text: "Welcome! 🖐", color: "#6f6974"},
+  {text: "I ❤️ programming, ethical hacking and developing . . . ", color: "#ff3c5c"},
+  {text: "I am a developer at day and ethical hacker by night . . .", color: "#0e6c42"}
 ]
 
 $( document ).ready(async function() {
   carousel(carouselText, "#feature-text")
 });
 
-async function typeSentence(sentence, eleRef, delay = 60) {
+async function typeSentence(sentence, eleRef, delay = 80) {
   const letters = sentence.split("");
   let i = 0;
   while(i < letters.length) {
