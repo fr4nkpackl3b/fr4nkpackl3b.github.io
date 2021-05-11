@@ -23,7 +23,7 @@
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
 			i++
-			setTimeout(typing, 53);
+			setTimeout(typing, 55);
 		}
 	}
 	typing();
@@ -31,8 +31,10 @@
  // typewriter effect
 	const carouselText = [
   {text: "Hi! 🖐", color: "#6f6974"},
-  {text: "I ❤️ programming, ethical hacking and developing. . .", color: "#ff3c5c"},
-  {text: "I am a developer at day and ethical hacker by night. . .", color: "#0e6c42"}
+  {text: "I ❤️ programming, ethical hacking. . .", color: "#ff3c5c"},
+  {text: "and developing. . .", color: "#ff3c5c"},
+  {text: "I am a developer at day", color: "#0e6c42"}
+  {text: "and ethical hacker by night. . .", color: "#0e6c42"}
 ]
 
 $( document ).ready(async function() {
