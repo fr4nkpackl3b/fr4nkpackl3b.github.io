@@ -30,9 +30,9 @@
 
  // typewriter effect
 	const carouselText = [
-  {text: "Hello I'm whitehathacker0205", color: "#8869e4"},
-  {text: "I'm Ariel Fajardo", color: "#17b06b"},
-  {text: "I am whitehathacker0205 or Ariel Fajardo", color: "#ff3c5c"}
+  {text: "Welcome! 🐱‍💻", color: "#8869e4"},
+  {text: "I am not a hacker! 👨‍💻", color: "#17b06b"},
+  {text: "I am whitehathacker0205 and Ariel Fajardo", color: "#ff3c5c"}
 ]
 
 $( document ).ready(async function() {
