@@ -35,7 +35,7 @@
   {text: "I ❤️ programming...", color: "#ff3c5c"},
   {text: "and ethical hacking...", color: "#17b06b"},
   {text: "and web development too!", color: "#ff3c5c"},
-  {text: "I am a developer at day...", color: "#714cdf"},
+  {text: "I am a web developer at day...", color: "#714cdf"},
   {text: "and ethical hacker by night.", color: "#0e6c42"}
 ]
 
