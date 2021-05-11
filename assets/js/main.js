@@ -31,9 +31,9 @@
  // typewriter effect
 	const carouselText = [
   {text: "Hi! 🖐", color: "#6f6974"},
-  {text: "I ❤️ programming, ethical hacking. . .", color: "#ff3c5c"},
-  {text: "and developing. . .", color: "#ff3c5c"},
-  {text: "I am a developer at day", color: "#0e6c42"}
+  {text: "I ❤️ programming, ethical hacking", color: "#ff3c5c"},
+  {text: "and developing too. . .", color: "#17b06b"},
+  {text: "I am a developer at day", color: "#714cdf"},
   {text: "and ethical hacker by night. . .", color: "#0e6c42"}
 ]
 
