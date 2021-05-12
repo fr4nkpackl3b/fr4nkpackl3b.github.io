@@ -38,7 +38,7 @@
   {text: "I'm only a ethical hacker...", color: "#17b06b"},
   {text: "by night.", color: "#17b06b"},
   {text: "By day...", color: "#ff3c5c"},
-  {text: "just a regular web developer.", color: "#ff3c5c"}
+  {text: "just a regular developer.", color: "#ff3c5c"}
 ]
 
 $( document ).ready(async function() {
