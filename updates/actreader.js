@@ -18,7 +18,7 @@
  });
 
  		var i=0, text;
-	text = " It's been a while, but here is the new update. I have already finished my Application Form Project. Date: 5/12/2021"
+	text = " It's been a while, but here is the new project I have already finished. An Application Form Project. Date: 5/12/2021"
 
 	function typing() {
 		if(i<text.length){
