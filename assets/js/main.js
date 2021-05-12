@@ -35,10 +35,10 @@
   {text: "I ❤️ programming...", color: "#ff3c5c"},
   {text: "and ethical hacking...", color: "#17b06b"},
   {text: "and web development too!", color: "#ff3c5c"},
-  {text: "I'm only a ethical hacker...", color: "#0e6c42"},
-  {text: "by night.", color: "#ff707f"},
-  {text: "By day...", color: "#ff707f"},
-  {text: "just a regular web developer.", color: "#ff707f"}
+  {text: "I'm only a ethical hacker...", color: "#17b06b"},
+  {text: "by night.", color: "#17b06b"},
+  {text: "By day...", color: "#ff3c5c"},
+  {text: "just a regular web developer.", color: "#ff3c5c"}
 ]
 
 $( document ).ready(async function() {
