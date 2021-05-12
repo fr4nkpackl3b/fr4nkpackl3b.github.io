@@ -35,8 +35,9 @@
   {text: "I ❤️ programming...", color: "#ff3c5c"},
   {text: "and ethical hacking...", color: "#17b06b"},
   {text: "and web development too!", color: "#ff3c5c"},
-  {text: "I'm a web developer at day..", color: "#714cdf"},
-  {text: "and ethical hacker by night.", color: "#0e6c42"}
+
+  {text: "I'm only a ethical hacker by night.", color: "#0e6c42"},
+  {text: "By day, just a regular web developer.", color: "#0e6c42"}
 ]
 
 $( document ).ready(async function() {
