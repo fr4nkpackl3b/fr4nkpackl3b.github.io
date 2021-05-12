@@ -18,7 +18,7 @@
  });
  // typewriter effect
  		var i=0, text;
-	text = "I added a new project on updates called Web Design."
+	text = "I added a new projects on updates (Web Design and Application Form)."
 	function typing() {
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
