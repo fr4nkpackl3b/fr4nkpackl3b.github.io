@@ -18,7 +18,7 @@
  });
  // typewriter effect
  		var i=0, text;
-	text = "I added a new projects on updates."
+	text = "I added new projects on updates."
 	function typing() {
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
