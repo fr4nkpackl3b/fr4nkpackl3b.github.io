@@ -23,7 +23,7 @@
 		if(i<text.length){
 			document.getElementById("text").innerHTML += text.charAt(i);
 			i++
-			setTimeout(typing, 55);
+			setTimeout(typing, 40);
 		}
 	}
 	typing();
@@ -45,7 +45,7 @@ $( document ).ready(async function() {
   carousel(carouselText, "#feature-text")
 });
 
-async function typeSentence(sentence, eleRef, delay = 80) {
+async function typeSentence(sentence, eleRef, delay = 40) {
   const letters = sentence.split("");
   let i = 0;
   while(i < letters.length) {
@@ -61,7 +61,7 @@ async function deleteSentence(eleRef) {
   const letters = sentence.split("");
   let i = 0;
   while(letters.length > 0) {
-    await waitForMs(30);
+    await waitForMs(40);
     letters.pop();
     $(eleRef).html(letters.join(""));
   }
