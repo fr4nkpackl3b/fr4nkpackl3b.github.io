@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Welcome!</title>
+			<link rel="icon" href="images/whh.png">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		</head>
+
+<body>
+
+	<div class="background">
+
+	<div class="nav">
+
+			<a class="a" href="#">HOME</a>
+
+				<a class="b" href="#">ABOUT US</a>
+
+					<a class="c" href="#">GALLERY</a>
+
+						<a class="d" href="#">CONTACT US</a>
+
+							<a class="logout" href="login.html"><img src="images/logout.png" height="80" class="logout"></a>
+
+	</div>
+
+	<div class="content">
+		
+		<div class="home">
+
+				<h1>whitehathacker0205</h1>
+
+					<h3>by: Ariel Fajardo</h3>
+
+		</div>
+
+			<div class="aboutus">
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</div>
+
+
+		<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+						<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+
+		<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+
+		<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+
+		<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+
+		<div class="gallery">
+				<div class="image">
+					<img src="images/Nexus_Logo.png" />
+				</div>
+
+		<div class="contactus">
+
+			<div class="form">
+
+				<form action="index.html" method="post">
+
+						<input type="text" name="" class="inputtext" value="First Name">
+
+							<input type="text" name="" class="inputtext" value="Last Name">
+
+								<input type="text" name="" class="inputtext" value="Email">
+
+									<textarea cols="4" rows="6" class="inputmessage">Your Message</textarea>
+
+										<input type="button" name="" value="Submit">
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		
+		<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i am click")
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus'),
+		$gallery = $('.gallery'),
+		$contactus = $('.contactus');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			$gallery.fadeOut(); 
+			$contactus.fadeOut();
+		});
+		$b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut(); 
+			$contactus.fadeOut();
+		});
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$aboutus.fadeOut();
+			$contactus.fadeOut();
+		});
+		$d.click(function(){
+			$contactus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeIn();
+			$aboutus.fadeOut();
+		});
+
+	});
+
+		</script>
+
+	</body>
+
+</html>
