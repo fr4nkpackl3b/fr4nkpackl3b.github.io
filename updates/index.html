@@ -143,7 +143,7 @@ function myFunction() {
     <tr>
       <th scope="col">#</th>
       <th scope="col">Project</th>
-      <th scope="col">Preview</th>
+      <th scope="col">&nbsp;&nbsp;&nbsp;Preview</th>
     </tr>
   </thead>
   <tbody>
@@ -151,62 +151,73 @@ function myFunction() {
   <tr>
       <th scope="row">1</th>
       <td>
-        <a href="https://github.com/whitehathacker0205/hotel-system">
+        <a class ="text-mono text-decoration-none" href="https://github.com/whitehathacker0205/hotel-system">
         Hotel System in Java
         </a>
         <br><br>
-		<p>
-        Hotel system management<br>
+		<p class="text-mono">
+        Hotel system management
+        <br>
         in Java with database.
+          <br>
+        <br>
+
+        <a href="https://github.com/whitehathacker0205/hotel-system/tree/master/hotelsystem" class="btn btn-danger">
+        	<span class="fas fa-code"> Source Code</span>
+        </a>
         </p>
       </td>
       <td>
-        <a href="../assets/img/hotel_system.png" class="btn btn-sm btn-primary my-1 my-sm-0"><img src="../assets/img/1.png"></a>
-        <a href="https://github.com/whitehathacker0205/hotel-system/tree/master/hotelsystem" class="btn btn-sm btn-danger my-1 my-sm-0">
-          <span class="fas mr-1"></span>
-         < / > Source &nbsp;&nbsp;<img src="../assets/img/octocat.png"></a>
+        <a href="../assets/img/hotel_system.png" class="btn">
+        <img class="zoom" src="../assets/img/1.png"></a>
       </td>
     </tr>
 
   <tr>
       <th scope="row">2</th>
       <td>
-        <a href="https://github.com/whitehathacker0205/typing-animation">
+        <a class="text-mono text-decoration-none" href="https://github.com/whitehathacker0205/typing-animation">
         Text Animation Using CSS
-        </a><br>
-        <br><p>A simple text animation<br>I made with pure CSS.
-          </p>
+        </a>
+           <br>
+        <br>
+        <p class="text-mono">
+        	A simple text animation
+        	<br>
+        	I made with pure CSS.
+        <br>
+           <br>
+        <a class="btn btn-danger" href="https://github.com/whitehathacker0205/typing-animation"><span class="fas fa-code"> Source Code</span></a>
+        </p>
       </td>
       <td>
-        <a href="../projects/home.html" class="btn btn-sm btn-primary my-1 my-sm-0">
-          <span class="fas mr-1"></span><img src="../assets/img/2.png">
+        <a href="../projects/home.html" class="btn">
+          <span class="fas mr-1"></span><img class="zoom" src="../assets/img/2.png">
           </a>
-        <a href="https://github.com/whitehathacker0205/typing-animation" class="btn btn-sm btn-danger my-1 my-sm-0">
-          <span class="fas mr-1"></span>
-          < / > Source &nbsp;&nbsp;<img src="../assets/img/octocat.png"></a>
       </td>
     </tr>
   
   <tr>
       <th scope="row">3</th>
       <td>
-        <a href="https://github.com/whitehathacker0205/neural-network">
+        <a class="text-mono text-decoration-none" href="https://github.com/whitehathacker0205/neural-network">
         C++ Neural Network Digit Recognition
         </a><br><br>
-        <p>
+        <p class="text-mono">
           I create a neural network that can<br>
           recognize handwritten digits with <br>
           C++ and the olcConsoleGameEngine<br>
           created by javidx9.
+          <br>
+           <br>
+        <a href="https://github.com/whitehathacker0205/neural-network/blob/master/Main.cpp" class="btn btn-danger"><span class="fas fa-code"> Source Code</span></a>
+
         </p>
       </td>
-      <td>
-        <a href="../assets/img/neural_network.gif" class="btn btn-sm btn-primary my-1 my-sm-0">
+      <td><br>
+        <a href="../assets/img/neural_network.gif" class="btn">
           <span class="fas mr-1"></span>
           <img src="../assets/img/3.gif"></a>
-        <a href="https://github.com/whitehathacker0205/neural-network/blob/master/Main.cpp" class="btn btn-sm btn-danger my-1 my-sm-0">
-          <span class="fas mr-1"></span>
-         < / > Source &nbsp;&nbsp;<img src="../assets/img/octocat.png"></a>
       </td>
     </tr>
   
@@ -221,6 +232,7 @@ function myFunction() {
           using CSS.
           </p>
       </td>
+
       <td>
         <a href="../assets/img/portfoliopreview.png" class="btn btn-sm btn-primary my-1 my-sm-0">
           <span class="fas mr-1"></span>
@@ -459,6 +471,21 @@ function myFunction() {
   </div>
 
 </div>
+
+<style>
+	.zoom {
+  padding: 5px;
+  background-color: #28293e;
+  transition: transform .2s; /* Animation */
+  width: 246px;
+  height: 138px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
