@@ -140,7 +140,8 @@
               <div class="typing-container">
               <span id="sentence" class="sentence"></span>
               <span id="feature-text"></span>
-              <span class="vim-caret text-darkgrey">|</span>
+              <span class="text-darkgrey"></span>
+              <span class="vim-caret line line-cursor-blink">|</span>
               </div><br>
             
               <div class="text-danger">Update!</div>
@@ -256,6 +257,23 @@ footer {
 .aboutme {
   background-color: #181b24;
 }
+        .line{
+          opacity: 1;
+        }
+        .line.line-cursor-blink{
+          animation: typedjsBlink 1s infinite;
+          -webkit-animation: typedjsBlink 1s infinite;
+                  animation: typedjsBlink 1s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+
   </style>
 
   <footer>
