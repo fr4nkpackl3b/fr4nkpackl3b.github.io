@@ -1,6 +1,7 @@
 html {
     background: url('../img/bg.png') no-repeat center fixed; 
     background-repeat: no-repeat;
+    background-position: cover;
     animation: fadeinout 2s;
     opacity: 1;
 }
