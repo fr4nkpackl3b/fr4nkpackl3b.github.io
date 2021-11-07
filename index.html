@@ -199,7 +199,7 @@
   	<i class="fa fa-angle-double-right"></i> In my repo, I show of what I have created.<br>
     <center>
     	<h2 class="text-mono text-danger">Profile</h2>
-    	<img src="assets/img/me.png" width="200" height="200" class="btn btn-danger btn-shadow"><br><br>
+    	<img src="assets/img/me.png" class="zoom"><br><br>
     </center>
 
       <p class="text-mono">
@@ -250,6 +250,15 @@ footer {
   padding-bottom: 4em;
   padding-top: 4em;
   font-size: 15px;
+}
+.zoom {
+  padding: 5px;
+  background-color: #28293e;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .updates {
   background-color: #181b24;
