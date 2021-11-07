@@ -30,7 +30,7 @@
 
  // typewriter carousel effect
 	const carouselText = [
-  {text: "I'm ariel,", color: "#6f6974"},
+  {text: "ariel,", color: "#6f6974"},
   {text: "just a tech.", color: "#17b06b"}
 ]
 
