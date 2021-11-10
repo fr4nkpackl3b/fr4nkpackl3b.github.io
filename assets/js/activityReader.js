@@ -20,7 +20,7 @@ function myFunction() {
   }
 }
 $(window).blur(function() {
-        // Random titles
-        var myTitles = ["Made with love ❤️", "I miss you so much ❤️", "You're too shy! 🙈", "I eat veggies! 🥦"];
-        document.title = myTitles[Math.floor(Math.random() * myTitles.length)];
+        // some random titles
+        var titles = ["When you see a good move,", "look for a better one."];
+        document.title = titles[Math.floor(Math.random() * titles.length)];
     });
